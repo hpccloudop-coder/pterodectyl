@@ -66,24 +66,30 @@ Here is a [YouTube video](https://www.youtube.com) that illustrates the installa
 
 ## wings
 
+# Certificate
 ```bash
-mkdir -p /etc/certs
+bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/pterodectyl/refs/heads/main/certs)
 ```
 
-```cd /etc/certs```
+# install wings
+```bash
+bash <(curl -s https://pterodactyl-installer.se)
+```
 
-```openssl req -new -newkey rsa:4096 -days 3650 -nodes -x509 -subj "/C=NA/ST=NA/L=NA/O=NA/CN=Generic SSL Certificate" -keyout privkey.pem -out fullchain.pem```
+# paste your node config
+```bash
+nano /etc/pterodactyl/config.yml
+```
 
-```cd```
+```bash
+systemctl restart wings
+```
 
 
-```bash <(curl -s https://pterodactyl-installer.se)```
+```bash
+systemctl --now enable wings
+```
 
-```nano /etc/pterodactyl/config.yml```
-
-```systemctl restart wings```
-
-```systemctl --now enable wings```
 
 ***installing video coming soon!***
 
