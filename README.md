@@ -66,7 +66,9 @@ Here is a [YouTube video](https://www.youtube.com) that illustrates the installa
 
 ## wings
 
-```mkdir -p /etc/certs```
+```bash
+mkdir -p /etc/certs
+```
 
 ```cd /etc/certs```
 
