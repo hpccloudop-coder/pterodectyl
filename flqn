@@ -1,0 +1,5 @@
+###################################
+FLQN: cold-rabbit-94.telebit.io
+###################################
+
+# connect cold-rabbit-94.telebit.io -> localhost:80 -> cloudflare private dns domins --- exaples <panel.exaple.gg>
