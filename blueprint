@@ -23,6 +23,8 @@ CYAN='\033[0;36m'
 YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 
+echo -e "${BLUE}$ascii_art${NC}"
+
 sudo apt-get install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
