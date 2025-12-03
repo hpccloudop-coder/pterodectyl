@@ -1,0 +1,23 @@
+# Check if MariaDB is installed
+systemctl status mariadb
+# or
+systemctl status mysql
+
+# If not installed, install it:
+sudo apt update
+sudo apt install mariadb-server -y
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+# Check MariaDB logs
+sudo tail -f /var/log/mysql/error.log
+# or
+sudo journalctl -xe -u mariadb
+# Check service status
+systemctl status mariadb
+# or
+systemctl status mysql
+
+# Check if it's installed
+which mysql
+which mariadb
+sudo mysql_secure_installation
